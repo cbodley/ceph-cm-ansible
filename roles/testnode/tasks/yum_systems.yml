@@ -9,6 +9,8 @@
     group: root
     owner: root
     mode: 0644
+  when:
+    - not containerized_node
 
 - name: Set mode on /etc/fuse.conf
   file:
